@@ -4,25 +4,26 @@
 
 To get access to the app's content you need to run it into your browser.
 
-![main screen](./assets/header-image.png "main screen")
 
 
 
 ## Content
 
-After loading page, first 30 random images will appear under headline.
-
-All images will have title that is displayed when user hovers over an image. 
-
-![title image](./assets/title-image.png "title image")
+After loading page, user needs to click on a button to activate joke robot teller.
 
 
+![robot page image](./assets/robot-page.png "robot page image")
 
-...and are used to be a link to unsplash page with the picture and an author.
 
-![link unsplash](./assets/link-unsplash.png "link unsplash")
+Button is disabled as long as audio element isn't finished with talking jokes.
 
-After scrolling close to the bottom, new random images will appear. 
+Robot gif was cloned from a giphy, audio API is enabled over VoiceRss Javaskript SDK. <br>
+Jokes are taken from Joke API. 
+
+## Used API links
+* Jokes: https://sv443.net/jokeapi/v2/
+* Audio: https://www.voicerss.org/sdk/
+* Gif image: https://giphy.com/ 
 
 
 # 👉 Built with
@@ -32,5 +33,5 @@ After scrolling close to the bottom, new random images will appear.
 
 # 💻 Development
 1. run index.html on your browser
-2. git clone https://github.com/valerijadrinek/image-gallery.git
-3. github pages https://valerijadrinek.github.io/image-gallery/
+2. git clone https://github.com/valerijadrinek/robot-joke-teller.git
+3. github pages https://valerijadrinek.github.io/robot-joke-teller/
