@@ -1,0 +1,135 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+:root {
+  --black: #333;
+  --blue: #45badd;
+  --pink: #ff3482;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: radial-gradient(circle at 130%, var(--blue) 10%, #006699 10%,  #002233);
+  background-repeat: repeat-x;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.5rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  text-shadow: 0 0.3rem 0.2rem var(--black), 0 0 0.4rem #002233;
+  margin-bottom: 3rem;
+}
+
+/* container */
+.container {
+height: 100vh;
+width: 100vh;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-flow: row nowrap;
+}
+
+
+.robot-container {
+width: 75%;
+height: 75%;
+background: url('./assets/robot.gif');
+background-repeat: no-repeat;
+background-position: 65% 50%;
+background-size: cover;
+border-radius: 50%;
+border: 2rem outset whitesmoke;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+text-transform: capitalize;
+}
+
+
+
+/* button */
+button {
+  cursor: pointer;
+  outline: none;
+  width: 30%;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--pink);
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.5rem 0.6rem var(--black);
+  transition: all 0.3s;
+}
+
+button:hover {
+color: var(--pink);
+background-color: whitesmoke;
+font-weight: 600;
+text-shadow: 0.1rem 0.1rem 0.1rem #8dbad0, 0 0 0.2rem #788083;
+border: 2px outset whitesmoke;
+}
+
+button:active {
+  transform: translateY(5px) scale(0.95);
+  box-shadow: 0.05rem 0.25rem 0.3rem var(--black);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(50%);
+}
+/* media queries */
+/* for tablets or smaller */
+@media screen and (max-width: 1200px) {
+
+.container {
+  background-repeat: repeat-x;
+  margin-left: 0;
+}
+
+.robot-container {
+  width: 60%;
+  height: 60%;
+ }
+
+button {
+ width: 25%;
+ margin: 0;
+}
+  
+}
+
+/* for extra small devices */
+@media screen and (max-width: 600px) {
+ body {
+  width: 120vw;
+ }
+
+ .container {
+  justify-content: space-evenly;
+  align-content: center;
+ }
+
+ .robot-container {
+  width: 50%;
+  height: 50%;
+ }
+
+ button {
+  width: 30%;
+ }
+  
+}
